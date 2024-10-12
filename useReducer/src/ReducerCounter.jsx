@@ -13,7 +13,7 @@ const countReducer = (state, action) => {
 export default function ReducerCounter() {
     const [state, dispatch] = useReducer(countReducer, initalState);
   return (
-    <div>
+    <div className='flex flex-col flex-1 space-y-2'>
         <h1>Count: {state.count}</h1>
         <button onClick={() => dispatch({type: 'inc'})}>Increment</button>    
         <button onClick={() => dispatch({type: 'dec'})}>Decrement</button>    
@@ -21,3 +21,5 @@ export default function ReducerCounter() {
     </div>
   )
 }
+
+// create a task manager using useReducer
