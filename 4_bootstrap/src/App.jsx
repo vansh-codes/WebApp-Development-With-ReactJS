@@ -8,10 +8,10 @@ import Activity1 from './Activity1'
 function App() {
   return (
     <>
-      {/* <Notification subscribed={true}/>
+      <Notification subscribed={true}/>
       <Table1/>
       <HelloWorld/>
-      <BgChanger/> */}
+      <BgChanger/>
       <Activity1 name={["Vansh","Yash","Harshit","Aman","Tapasendra"]} company={["Google","Microsoft","Amazon","Startup","Meta"]}/>
     </>
   )

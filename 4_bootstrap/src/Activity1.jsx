@@ -1,5 +1,10 @@
-import React from 'react';
 import { Table } from 'react-bootstrap';
+import PropTypes from 'prop-types';
+
+Tablu.propTypes = {
+    name: PropTypes.array,
+    company: PropTypes.array
+}
 
 export default function Tablu(props) {
     const names = props.name;

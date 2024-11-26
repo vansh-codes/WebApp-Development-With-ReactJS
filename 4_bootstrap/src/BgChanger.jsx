@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 function BgChanger() {
   let [theme, setTheme] = useState('#555');
