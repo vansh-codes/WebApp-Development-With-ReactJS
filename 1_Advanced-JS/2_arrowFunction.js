@@ -32,7 +32,7 @@ obj.display();
 
 function abc(){
     class Parent{
-        #name
+        #name   // private variable
         constructor(name){
             this.#name = name;
             console.log(this.#name);
@@ -40,3 +40,7 @@ function abc(){
     }
     return Parent;
 }
+
+const ParentClass = abc();
+const parentInstance = new ParentClass('John Doe');
+console.log(parentInstance);    // Parent { }

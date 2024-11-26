@@ -23,6 +23,7 @@ function App() {
       try {
         const response = await fetch('https://jsonplaceholder.typicode.com/users');
         const data = await response.json();
+        // console.log(data);
         setUsers(data);
         setLoading(false);
       } catch (error) {

@@ -19,14 +19,24 @@ export default function Table(props) {
             </tr>
             </thead>
             <tbody>
-                {props.roomDetails.map((room, index) => (
+                {props.roomDetails.map((room, index) => {
+                    return (
+                        <tr key={index}>
+                            <td>{room.Room}</td>
+                            <td>{room.Location}</td>
+                            <td>{room.Rent}</td>
+                            <td>{room.Size}</td>
+                        </tr>
+                    );
+                })}
+                {/* {props.roomDetails.map((room, index) => (
                     <tr key={index}>
                         <td>{room.Room}</td>
                         <td>{room.Location}</td>
                         <td>{room.Rent}</td>
                         <td>{room.Size}</td>
                     </tr>
-                ))}
+                ))} */}
             </tbody>
         </table>
     </div>

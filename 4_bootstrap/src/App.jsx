@@ -5,6 +5,8 @@ import Notification from './Notification'
 import HelloWorld from './HelloWorld'
 import BgChanger from './BgChanger'
 import Activity1 from './Activity1'
+
+// npm install react-bootstrap bootstrap
 function App() {
   return (
     <>

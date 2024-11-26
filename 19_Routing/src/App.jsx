@@ -32,21 +32,25 @@ const router = createBrowserRouter([
   {
     path: '/user/:id',
     element: <Dynamic />
+  },
+  {
+    path: '*',
+    element: <div>404 Not Found</div>
   }
 ])
 
 function App() {
   const [value, setValue] = useState('')
-   const handleInput = () => {
+  const handleInput = () => {
     router.navigate(`/user/${value}`)
-  } 
+  }
 
   return (
     <>
       <RouterProvider router={router} >
         <Header />
       </RouterProvider>
-      <input type="text" value={value} onChange={(e) => setValue(e.target.value)}/>
+      <input type="text" value={value} onChange={(e) => setValue(e.target.value)} />
       <button type="submit" onClick={handleInput}>Submit</button>
     </>
   )

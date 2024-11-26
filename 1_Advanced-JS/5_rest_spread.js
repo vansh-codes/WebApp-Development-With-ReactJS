@@ -41,7 +41,7 @@ var processData = (students) => {
     // Step1: filter out students with an avg below 70
     const filterData = students.filter(student => {
         const avg = student.grades.reduce((acc, val) => acc + val, 0);
-        return avg <= 70;
+        return (avg/3) <= 70;
     });
 
     // Map the sorted arr to a new arr of objects that only includes the stu

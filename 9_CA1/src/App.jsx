@@ -18,7 +18,7 @@ function App() {
     <>
       <h1>Room Rentals</h1>
       <Table roomDetails={roomDetails}/>
-      <ul>
+      <ul style={{listStyleType: 'none'}}>
       {
         roomDetails.map((loc, index) => (
           <li key={index}>
