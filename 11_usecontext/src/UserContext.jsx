@@ -4,9 +4,9 @@ import Context from './Context'
 export const User = createContext();
 
 export default function UserContext() {
-  const [user, setUser ] = useState("Vansh");
+  const [user] = useState("Vansh");
   return (
-    <User.Provider value={"Vansh"}>
+    <User.Provider value={user}>
       <div>
         <h1>Component {user}</h1>
       </div>

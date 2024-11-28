@@ -2,7 +2,7 @@ import { useState } from "react"
 import { useSelector, useDispatch } from "react-redux"
 import { increment, decrement, incrementByAmount, reset } from "../store/counterSlice"
 
-export default function Counter() {
+export default function Counter() {   
     // select the current counter value from the redux store
     const count = useSelector((state) => state.counter.value)
 
