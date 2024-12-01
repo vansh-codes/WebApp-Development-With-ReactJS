@@ -368,3 +368,17 @@ An object that describes what changes are to be made in the state.
 ```
 A function that specifies how the state changes in response to actions.
 ```
+
+
+### Potential Questions:
+
+1. useState to manage counter, inc and dec
+2. demonstrate how to handle events, create btn and show alert when you click
+3. render list of users and allow filtering the list. use usecallback to optimize to filtering func and useMemo to memoize filtered list
+4. component to display factorial, use useMemo to optimize performance
+5. react context for theme switching
+6. controlled form with username and pwd and validate both 
+7. implement todo using useReducer(add,edit,delete)
+8. custom hook that fetched data from api and demonstrates how it is re-used accross diff components
+9. use fetch api or axios to get request to retrieve list of users and display
+10. set up routing in react app and create links to navigate bwtween pages, passing data via url query params
