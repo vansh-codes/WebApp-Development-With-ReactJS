@@ -281,7 +281,7 @@ In class components, state is created in the constructor using this.state. In fu
 Common pitfalls include directly mutating state, not using functional updates for state that depends on previous values, not handling state updates asynchronously, and passing state down unnecessarily to child components.
 ```
 
-#### What are the key lifecycle methods in class components? 
+#### What are the key lifecycle methods in class components?
 ```
 Key lifecycle methods include constructor(), componentDidMount(), shouldComponentUpdate(), componentDidUpdate(), and componentWillUnmount()
 ```
@@ -357,7 +357,7 @@ Redux is a state management library that provides a predictable way to manage st
 Single source of truth: State is stored in a centralized store.
 State is read-only: The only way to change state is by dispatching actions.
 Pure reducers: State updates are handled by pure functions.
-```
+``` 
 
 #### What is a Redux action?
 ```
@@ -369,6 +369,12 @@ An object that describes what changes are to be made in the state.
 A function that specifies how the state changes in response to actions.
 ```
 
+#### Closures
+A closure is a function that "remembers" the variables from its outer scope even after that scope has finished executing.
+Why Use Closures?
+1. Data Encapsulation (Hide data from the outside world).
+2. Partial Application (Create specialized versions of functions).
+3. Event Handling (Remember state between event executions).
 
 ### Potential Questions:
 
@@ -382,3 +388,34 @@ A function that specifies how the state changes in response to actions.
 8. custom hook that fetched data from api and demonstrates how it is re-used accross diff components
 9. use fetch api or axios to get request to retrieve list of users and display
 10. set up routing in react app and create links to navigate bwtween pages, passing data via url query params
+
+
+### Interview Question:
+ 
+#### JS
+1. async js -> promise, then, catch, finally, promise chaining, promise.all, promise.race, custom promises, how promises solve callback hell
+2. async await -> try,catch, conversion to promise and vice-versa
+3. event loop, call stack, processing of events
+4. generators and iterators -> yield, usage with async await
+5. closure -> data encapsulation, partial application, event handling
+6. prototypal inheritance -> object.create, new keyword usage working etc, __proto__
+7. scope and hoisting
+8. this keyword -> arrow func, method calls, func calls, bind call and apply usage
+9. map, reducer, foreach, filter
+10. es6 -> destructing, rest, spread, template literals, classes, import/export, arrow funcs, let const var
+11. performance optimization -> bundling, dom manipulation, memory leak
+12. DSA -> searching sorting
+
+#### React
+1. component lifecycle -> 
+2. hooks and custom hooks
+3. context api
+4. data sharing without prop drilling
+5. hoc
+6. render props
+7. error boundaries
+8. performance optimization -> memo, virtualization, code splitting, profiling tools, tree shaking
+9. react router and react router dom
+10. global state management -> **redux**, useContext, useReducer
+11. ssr optional (nextjs)
+12. testing -> jest, cypress
